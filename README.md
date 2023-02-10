@@ -1,3 +1,3 @@
 # dotfiles
 
-Dan's configuration dotfiles.
+Dan's MacOS configuration dotfiles.
