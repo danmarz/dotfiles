@@ -10,8 +10,8 @@
 	autocrlf = false
 	eol = lf
 	safecrlf = warn
-	pager = delta --theme="night-owlish"
-	excludesfile = /Users/dms/.gitignore_global
+	pager = delta --syntax-theme="night-owlish"
+	excludesfile = /Users/dm/.gitignore_global
 [pull]
 	rebase = true
 [branch]
@@ -29,6 +29,14 @@
 	default = current
 [interactive]
 	diffFilter = delta --color-only
+[delta]
+    navigate = true
+	side-by-side = true
+	line-numbers = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
 [color]
 	ui = true
 [color "diff-highlight"]
