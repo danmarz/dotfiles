@@ -45,9 +45,15 @@ echo "brew installing stuff"
 # pgcli: postgres CLI
 brew install git hub gh libdvdcss ripgrep imagemagick watchman tree bat \
 git-delta switchaudio-osx pgcli ffmpeg espanso diff-so-fancy \
-romkatv/powerlevel10k/powerlevel10k wget jq ack \
+romkatv/powerlevel10k/powerlevel10k wget jq ack gpg pinentry-mac \
 awscli calc ccrypt dos2unix geoip git-flow hh htop \
 httpie ncdu nmap tig tmux unrar vimpager speedtest-cli \
+
+# configuring GPG to use the macOS keychain (using pinentry-mac)
+mkdir -m 700 ~/.gnupg
+echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf
+gpgconf --reload
+# Done! Next time you sign a commit, you'll be prompted to save it to the macOS Keychain.
 
 # echo "installing node (via n-install)"
 # curl -L https://git.io/n-install | bash
