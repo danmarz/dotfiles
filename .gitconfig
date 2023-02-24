@@ -14,6 +14,7 @@
 	safecrlf = warn
 	pager = delta --syntax-theme="night-owlish"
 	excludesfile = /Users/dm/.gitignore_global
+	editor = code -w -n
 [pull]
 	rebase = true
 [branch]
