@@ -4,6 +4,9 @@ export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=Fafacxdxbxegedabagacad
 
+# Fix unknown locale in iTerm (https://apple.stackexchange.com/questions/451014/unknown-locale-assuming-c-error-message-in-terminal)
+export LANG=en_US.UTF-8
+
 # PROMPT STUFF
 GREEN=$(tput setaf 2);
 YELLOW=$(tput setaf 3);
