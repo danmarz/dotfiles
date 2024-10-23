@@ -26,3 +26,19 @@ colorscheme dracula
 " Spellcheck markdown
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.md set complete+=kspell
+
+" Stdheader config
+let g:user42 = 'ddumitre'
+let g:mail42 = 'ddumitre@student.42barcelona.com'
+
+call plug#begin()
+
+" List your plugins here
+Plug 'junegunn/vim-plug'
+Plug 'keith/gist.vim'
+
+call plug#end()
+
+" gist settings
+let g:gist_open_url=1 " Open url in browser automatically
+let g:gist_copy_url=1 " copy gist url to clipboard
